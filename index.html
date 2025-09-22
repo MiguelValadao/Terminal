@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Teixeira Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            MiguelTValadao (MTV) Not A Corporation. All rights reserved.
+        </div>                                                                
+        <span class="copyright">© 2008</span>
+ 
+        <div class="welcome-message">
+            Welcome to my interactive web terminal.<br>
+            For a list of available commands, type <span class="help-command">'help'</span>.
+        </div>
+        <div class="terminal">
+            <div id="terminal-output"></div>
+            <div class="input-line">
+                <span class="prompt">contact@migueltvaladao:$</span>
+                <div class="input-container">
+                    <span class="input-text"></span>
+                    <span class="cursor">█</span>
+                    <input type="text" id="terminal-input" autofocus>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

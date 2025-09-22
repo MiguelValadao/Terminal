@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 13px
+}
+
+body {
+    background-color: #000000;
+    color: #90EE90;
+    padding-top: 20px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 3em;
+    right: 6em;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.welcome-message {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.terminal {
+    background-color: transparent;
+    padding: 0 10px 10px 10px;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: auto;
+}
+
+#terminal-output {
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    color: #90EE90;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    color: #ffffff;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.input-container {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-text {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: monospace;
+    white-space: pre;
+    min-height: 1em;
+}
+
+#terminal-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: transparent;
+    font-size: 14px;
+    outline: none;
+    caret-color: transparent;
+    font-family: monospace;
+}
+
+.cursor {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: monospace;
+    animation: blink 1s step-end infinite;
+    position: relative;
+    z-index: 1;
+    min-width: 1ch;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.command-output {
+    margin: 5px 0;
+    color: #90EE90;
+}
+
+.error-output {
+    color: #ff6b6b;
+}
+
+/* Remove the glow effect */
+.terminal::before {
+    display: none;
+}
+
+.help-command {
+    font-weight: bold;
+    color: #46e42a;
+}
