@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         projects: () => `My Projects:
 1. Terminal Portfolio - An interactive way to showcase my work
-2. My portfolio
+2. My main portfolio
 3. Google search layout copy
-4. More on Github (enter command 'github')`,
+4. All of them and a few others on Github (enter command 'github')`,
 
         contact: () => `Get in touch:
 Email: miguelteix2008@gmail.com
