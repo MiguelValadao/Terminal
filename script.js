@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     terminalInput.addEventListener('select', updateCursorPosition);
     terminalInput.addEventListener('selectionchange', updateCursorPosition);
 
+    //commands
     const commands = {
         help: () => `Available commands:
 - help: Show this help message
@@ -96,7 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contact: () => `Get in touch:
 Email: miguelteix2008@gmail.com
-GitHub: MiguelValadao`,
+GitHub: MiguelValadao
+LinkedIn: Miguel Teixeira Valadão
+Instagram: omiguelito_valadao`,
 
         history: () => inputHistory.length ? inputHistory.join('\n') : 'No commands in history.',
 
@@ -111,6 +114,7 @@ GitHub: MiguelValadao`,
         closed: () => `Still working on it...`,
     };
 
+    // Handle command input
     terminalInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             const command = terminalInput.value.trim().toLowerCase();
