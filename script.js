@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 - contact: How to reach me
 - GitHub: access my GitHub page
 - history: display command history
+- clearhistory: Clear command history
 - closed: Discover the password to access it`,
 
         about: () => `I'm a student at Cotemig technical school, studying Software development focused on mobile and web applications, also looking into DevOps and hardware studies`,
@@ -98,6 +99,12 @@ Email: miguelteix2008@gmail.com
 GitHub: MiguelValadao`,
 
         history: () => inputHistory.length ? inputHistory.join('\n') : 'No commands in history.',
+
+        clearhistory: () => {
+            inputHistory = [];
+            historyIndex = -1;
+            return 'Command history cleared.';
+        },
 
         github: () => window.location.href = `https://github.com/MiguelValadao/`,
 
