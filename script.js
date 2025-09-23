@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 Email: miguelteix2008@gmail.com
 GitHub: MiguelValadao`,
 
-        history: () => `Still working on it...`,
+        history: () => inputHistory.length ? inputHistory.join('\n') : 'No commands in history.',
 
         github: () => window.location.href = `https://github.com/MiguelValadao/`,
 
