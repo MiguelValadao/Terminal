@@ -111,8 +111,17 @@ Instagram: omiguelito_valadao`,
 
         github: () => window.location.href = `https://github.com/MiguelValadao/`,
 
-        closed: () => `Still working on it...`,
+        closed: () => password = prompt("Enter the password to access the secret content:") === "T3rm1n4L" ? downloadResume() : 'Incorrect password. Access denied.',
     };
+
+    const downloadResume = () => {
+        const link = document.createElement('a');
+        link.href = 'Curriculo_Miguel_Teixeira_Valadao.pdf';
+        link.download = 'Curriculo_Miguel_Teixeira_Valadao.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     // Handle command input
     terminalInput.addEventListener('keypress', (e) => {
