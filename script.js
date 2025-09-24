@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let historyIndex = -1;
     let currentInput = '';
 
-    console.log("You found the password! To access the secret, type the password on the field and enjoy!")
+    console.log("You found the password! To access the secret, type the password in the field and enjoy!")
 
     console.log("Password is: T3rm1n4L")
 
