@@ -111,7 +111,7 @@ Instagram: omiguelito_valadao`,
 
         github: () => window.location.href = `https://github.com/MiguelValadao/`,
 
-        closed: () => password = prompt("Enter the password to access the secret content:") === "T3rm1n4L" ? downloadResume() : 'Incorrect password. Access denied.',
+        closed: () => password = prompt("Enter the password to access the secret content:") === "T3rm1n4L" ? downloadResume() : '<div class="error-output">Incorrect password. Access denied</div>\n',
     };
 
     const downloadResume = () => {
